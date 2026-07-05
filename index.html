@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our Love Story - A Pixel Art Anniversary Celebration">
+  <meta name="theme-color" content="#FF1744">
+  <title>Our Anniversary ❤️ Pixel Love Story</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+  <!-- Particle Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav-pixel" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="heart">♥</span> OUR STORY
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#timeline">STORY</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#letter">LETTER</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero-section" id="home">
+    <div class="hero-badge">✦ ACHIEVEMENT UNLOCKED ✦</div>
+
+    <h1 class="hero-title">
+      <span class="highlight">PAPIYO</span>
+    </h1>
+    <div class="hero-ampersand">♥</div>
+    <h1 class="hero-title">
+      <span class="highlight">MAMIYA</span>
+    </h1>
+
+    <!-- Pixel Art Characters (drawn via canvas in JS) -->
+    <div class="pixel-characters">
+      <canvas class="pixel-char boy" id="char-boy" width="64" height="80"></canvas>
+      <div class="pixel-heart-between">💕</div>
+      <canvas class="pixel-char girl" id="char-girl" width="64" height="80"></canvas>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-container">
+      <div class="countdown-box">
+        <span class="number" id="countdown-days">0000</span>
+        <span class="label">DAYS</span>
+      </div>
+      <div class="countdown-box">
+        <span class="number" id="countdown-hours">00</span>
+        <span class="label">HOURS</span>
+      </div>
+      <div class="countdown-box">
+        <span class="number" id="countdown-minutes">00</span>
+        <span class="label">MINS</span>
+      </div>
+      <div class="countdown-box">
+        <span class="number" id="countdown-seconds">00</span>
+        <span class="label">SECS</span>
+      </div>
+    </div>
+
+    <div class="hero-date">📅 SINCE 6 JULY 2019</div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <span class="arrow">▼</span>
+    </div>
+  </section>
+
+  <!-- ====== TIMELINE / QUEST LOG ====== -->
+  <section class="timeline-section" id="timeline">
+    <h2 class="section-title">📜 OUR QUEST LOG</h2>
+    <p class="section-subtitle">Perjalanan cinta kita dari awal hingga sekarang</p>
+
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+
+      <!-- ============================================
+           QUEST #1 — Ganti sesuai cerita kamu
+           - timeline-date  : tanggal / bulan / tahun
+           - timeline-title : judul momen
+           - timeline-desc  : deskripsi singkat
+           ============================================ -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-quest-badge">⚔ QUEST #1</span>
+          <span class="timeline-icon">👀</span>
+          <div class="timeline-date">📅 2016</div>                          <!-- ✏️ GANTI TANGGAL -->
+          <h3 class="timeline-title">Pertama Kali Bertemu</h3>              <!-- ✏️ GANTI JUDUL -->
+          <p class="timeline-desc">Awal kita bertemu ya pas masuk kelas 7 SMP. yang saat itu juga ga akan nyangka kita bakal sejauh ini hehe.</p>  <!-- ✏️ GANTI DESKRIPSI -->
+        </div>
+      </div>
+
+      <!-- ============================================
+           QUEST #2 — Ganti sesuai cerita kamu
+           ============================================ -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-quest-badge">⚔ QUEST #2</span>
+          <span class="timeline-icon">💬</span>
+          <div class="timeline-date">📅 2018</div>                          <!-- ✏️ GANTI TANGGAL -->
+          <h3 class="timeline-title">Ketemu lagi di kelas 9</h3>            <!-- ✏️ GANTI JUDUL -->
+          <p class="timeline-desc">Dulu waktu kelas 9 banyak banget hal kocak diantara kita berdua. aku malu nyebutinnya wkwk.</p>  <!-- ✏️ GANTI DESKRIPSI -->
+        </div>
+      </div>
+
+      <!-- ============================================
+           QUEST #3 — Ganti sesuai cerita kamu
+           ============================================ -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-quest-badge">⚔ QUEST #3</span>
+          <span class="timeline-icon">🎮</span>
+          <div class="timeline-date">📅 2018</div>                     <!-- ✏️ GANTI TANGGAL -->
+          <h3 class="timeline-title">Pergi berdua pertama ke Gramedia</h3>                    <!-- ✏️ GANTI JUDUL -->
+          <p class="timeline-desc">Aku awalnya ngajak kamu ke gramedia murni pengen beli buku aja sih. ga ada tujuan lain hehe. taspi entah itu awal kita bisa menjadi semakin dekat.</p>  <!-- ✏️ GANTI DESKRIPSI -->
+        </div>
+      </div>
+
+      <!-- ============================================
+           ACHIEVEMENT — Tanggal jadian resmi
+           ============================================ -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-quest-badge">🏆 ACHIEVEMENT</span>
+          <span class="timeline-icon">❤️</span>
+          <div class="timeline-date">📅 6 Juli 2019</div>                   <!-- ✏️ GANTI TANGGAL -->
+          <h3 class="timeline-title">Resmi Jadian!</h3>                     <!-- ✏️ GANTI JUDUL -->
+          <p class="timeline-desc">🎊 Setelah lama memendam perasaan aku beraniin diri deh buat nembak kamu di Upnormal. walaupung udah bangkrut itu sejarah kita bisa bersama wkwk. Aku pas itu malu dan takut tau makanya beraninya di chat. udh ya jangan di terusin aku ngakak nulis ini!</p>  <!-- ✏️ GANTI DESKRIPSI -->
+        </div>
+      </div>
+
+      <!-- ============================================
+           QUEST #5 — Ganti sesuai cerita kamu
+           Bisa tambah quest baru dengan copy-paste
+           blok <div class="timeline-item"> di atas
+           ============================================ -->
+      <div class="timeline-item" data-scroll>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-quest-badge">⚔ QUEST #5</span>
+          <span class="timeline-icon">🌟</span>
+          <div class="timeline-date">📅 2019 - Sekarang</div>               <!-- ✏️ GANTI TANGGAL -->
+          <h3 class="timeline-title">Petualangan kita masih lama</h3>          <!-- ✏️ GANTI JUDUL -->
+          <p class="timeline-desc">Semoga pertualangan kita terus berlanjut sampai kakek nenek ya. Masih banyak cerita yang perlu aku tulis hehe</p>  <!-- ✏️ GANTI DESKRIPSI -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY ====== -->
+  <section class="gallery-section" id="gallery">
+    <h2 class="section-title">📸 SCREENSHOT GALLERY</h2>
+    <p class="section-subtitle">Momen-momen terbaik yang ter-capture</p>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto1.jpg" alt="Kenangan Pertama" class="gallery-photo">
+        <div class="gallery-item-label">Melihat Ikan</div>
+      </div>
+
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto2.jpg" alt="Momen Bahagia" class="gallery-photo">
+        <div class="gallery-item-label">Jalan jalan ke Kota Tua</div>
+      </div>
+
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto3.jpg" alt="Sunset Bersama" class="gallery-photo">
+        <div class="gallery-item-label">Balapan Go Kart. Kamu kalah :P</div>
+      </div>
+
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto4.jpg" alt="Perayaan Spesial" class="gallery-photo">
+        <div class="gallery-item-label">Fotobox Terpaksa soalnya gajadi ke pantai </div>
+      </div>
+
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto5.jpg" alt="Liburan Bareng" class="gallery-photo">
+        <div class="gallery-item-label">Ke dufan</div>
+      </div>
+
+      <div class="gallery-item" data-scroll>
+        <img src="assets/foto6.jpg" alt="Selalu Bersama" class="gallery-photo">
+        <div class="gallery-item-label">Ke dufan juga wkwk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MUSIC PLAYER ====== -->
+  <section class="music-section" id="music">
+    <h2 class="section-title">🎵 OUR SOUNDTRACK</h2>
+    <p class="section-subtitle">Lagu yang mengiringi cerita kita</p>
+
+    <div class="music-player" id="music-player">
+      <div class="music-player-header">
+        <span class="music-now-playing">♪ NOW PLAYING</span>
+      </div>
+      <div class="music-track-name" id="track-name">You Are The Reason</div>
+      <div class="music-artist">♥ Calum Scott</div>
+
+      <div class="music-controls">
+        <button class="music-btn" id="prev-btn" aria-label="Previous">⏮</button>
+        <button class="music-btn play-btn" id="play-btn" aria-label="Play">▶</button>
+        <button class="music-btn" id="next-btn" aria-label="Next">⏭</button>
+      </div>
+
+      <div class="music-progress-container" id="progress-container">
+        <div class="music-progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="music-time">
+        <span id="current-time">0:00</span>
+        <span id="total-time">0:00</span>
+      </div>
+
+      <div class="music-visualizer" id="visualizer">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Audio element — add your mp3/ogg file to assets/ folder -->
+    <audio id="audio-element" preload="auto">
+      <source src="assets/calum.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <!-- ====== LOVE LETTER ====== -->
+  <section class="letter-section" id="letter">
+    <h2 class="section-title">💌 LOVE LETTER</h2>
+    <p class="section-subtitle">Sebuah pesan dari hati</p>
+
+    <div class="letter-container" data-scroll>
+      <div class="letter-greeting">Dear MAMIYA,</div>
+      <div class="letter-body">
+        <p>Dari semua kisah hidupku. bertemu dengan mu adalah suatu yang sangat menyenangkan. Kamu bukan sekedar perempuan biasa di dalam ceritaku. Tapi kamu adalah partner terbaik yang pernah ada.</p>
+        <p>Setiap hari bersamamu terasa seperti mendapatkan tenaga lebih. Senyummu selalu menghiasi langkahku untuk melaju. Dan pelukanmu adalah perisai terbaik yang pernah ada.</p>
+        <p>Terima kasih sudah menjadi teman hidupku. Aku ga sabar soal kelanjutan kisah cerita kita berdua kedepannya bersamamu 💕</p>
+      </div>
+      <div class="letter-signature">
+        With all my hearts (❤️❤️❤️),<br>
+        PAPIYO
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <p class="footer-text">
+      MADE WITH <span class="footer-heart">♥</span> FOR US
+      <br>
+      © 2019 - FOREVER | OUR LOVE STORY
+    </p>
+    <div class="footer-pixel-art">♥ · ♥ · ♥ · ♥ · ♥</div>
+  </footer>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Gallery preview">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
